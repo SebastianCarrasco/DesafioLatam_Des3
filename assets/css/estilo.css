@@ -1,3 +1,118 @@
-main {
-    display: flex;
+* {
+    margin: 0px;
+    padding: 0px;
 }
+
+h1.raleway {
+    font-family: "Raleway", sans-serif;
+    /* font-optical-sizing: auto; */
+    font-weight: normal;
+    font-size: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 73px;
+}
+
+main {
+    justify-content: center;
+    background-color: black;
+}
+
+section.descripcionFoto {
+    display: flex;
+    background-color: black;
+    justify-content: space-around;
+    align-items: center;
+    height: 348px;
+}
+
+p {
+    color: white;
+    width: 475px;
+    font-family: "Raleway", sans-serif;
+    font-weight: light;
+    font-size: 16px;
+}
+
+.mainFoto {
+    height: 727px;
+    width: 100%;
+}
+.fotoArticulo {
+    height: 237px;
+}
+
+#sectionCaracteristica {
+    background-color: #1E1A13;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    height: 348px;
+}
+
+h2.raleway{
+    font-weight:normal;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    padding-top: 2%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 20%;
+    row-gap: 15px;
+}
+
+.item i {
+    font-size: 50px;
+}
+.item div {
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+.fotosFinal {
+    display: flex;
+    width: 100%;
+    height: 348px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+footer {
+    background-color: #1E1A13;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+footer div{
+    display: flex;
+    height: 102px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer div a{
+    text-decoration: none;
+    color: white;
+}
+

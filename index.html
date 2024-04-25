@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ef6b428f1c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Iguana Page</title>
     <link href="./assets/css/estilo.css" rel="stylesheet">
     <!-- Agregar Icono de Iguana -->
@@ -10,46 +14,56 @@
 <body>
 
     <header>
-        <h1>IGUANA</h1>
+        <h1 class="raleway">IGUANAS</h1>
     </header>
 
     <main>
         <section>
-            <img src="./assets/img/bg-header.jpg" alt="fotoPrincipal" height="727">
+            <img class="mainFoto" src="./assets/img/bg-header.jpg" alt="fotoPrincipal">
+        </section>
+
+        <section class="descripcionFoto">
+            <article>
+                <p>La iguana es un reptil perteneciente a la familia Iguanadiae. Su tamaño está entre los 15 cm hasta los 2 metros de largo y puede llegar a pesar unos 15 kg. 
+                    Cuando están jóvenes tienen una coloración con tonos verdes y al ir madurando predomina un color grisáceo con crestas o espinas en su espalda.</p>
+                <br><p>La alimentación de la iguana va variando según su etapa de vida, pero la mayor parte de sus años son herbívoras. Viven en lugares tropicales con mucha vegetación y es un animal que puede ser domesticado.</p>
+            </article>
+            <article>
+                <img class="fotoArticulo" src="./assets/img/iguana-1.jpg" alt="fotoArticulo" height="237">
+            </article>
+        </section>
+
+        <section id="sectionCaracteristica">
+            <h2 class="raleway">CARACTERÍSTICAS</h2>
+            <div class="container">
+                <div class="item">
+                    <i class="fa-regular fa-eye"></i>
+                    <div>Tercer ojo</div>
+                </div>
+                <div class="item">
+                    <i class="fa-regular fa-hand-peace"></i>
+                    <div>Pacíficas</div>
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <div>Cambian de color</div>
+                </div>
+            </div>
         </section>
 
         <section>
-            <article>
-                <p>La iguana es un reptil perteneciente a la familia Iguanadiae. Su tamaño está entre los 15 cm hasta los 2 metros de largo y puede llegar a pesar unos 15 kg. Cuando están jóvenes tienen una coloración con tonos verdes y al ir madurando predomina un color grisáceo con crestas o espinas en su espalda. La alimentación de la iguana va variando según su etapa de vida, pero la mayor parte de sus años son herbívoras. Viven en lugares tropicales con mucha vegetación y es un animal que puede ser domesticado.</p>
-            </article>
-            <article>
-                <img src="./assets/img/iguana-1.jpg" alt="fotoArticulo" height="237">
-            </article>
+            <div class="fotosFinal">
+                <div><img src="./assets/img/iguana-2.jpg" alt="fotoBottom1" height="202"></div>
+                <div><img src="./assets/img/iguana-3.jpg" alt="fotoBottom2" height="202"></div>
+                <div><img src="./assets/img/iguana-4.jpg" alt="fotoBottom3" height="202"></div>
+            </div>
         </section>
-
-        <section>
-            <h1>CARACTERÍSTICAS</h1>
-            <article>
-                Tercer ojo
-            </article>
-            <article>
-                Pacíficas
-            </article>
-            <article>
-                Cambian de color
-            </article>
-        </section>
-
-        <section>
-            <img src="./assets/img/iguana-2.jpg" alt="fotoBottom1" height="202">
-            <img src="./assets/img/iguana-3.jpg" alt="fotoBottom2" height="202">
-            <img src="./assets/img/iguana-4.jpg" alt="fotoBottom3" height="202">
-        </section>
-
     </main>
 
     <footer>
-        <a href="https://www.anipedia.net/iguanas/iguana-verde/">Visita https://www.anipedia.net/iguanas/iguana-verde/ para conocer más.</a>
+        <div>
+            <span>Visita &nbsp;</span><a href="https://www.anipedia.net/iguanas/iguana-verde/">https://www.anipedia.net/iguanas/iguana-verde/</a><span>&nbsp;para conocer más.</span>
+        </div>
     </footer>
     
 </body>
