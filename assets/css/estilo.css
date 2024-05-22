@@ -1,118 +1,149 @@
+/* Reset de márgenes y paddings */
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0; /* Elimina el margen por defecto */
+    padding: 0; /* Elimina el padding por defecto */
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total de los elementos */
 }
 
+/* Estilos para el header */
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    color: white;
-    height: 73px;
+    display: flex; /* Utiliza flexbox para alinear elementos hijos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color del texto blanco */
+    height: 73px; /* Altura del header */
 }
 
+/* Estilo para el título principal */
 h1.raleway {
-    font-family: "Raleway", sans-serif;
-    font-weight: normal;
-    font-size: 50px;
+    font-family: 'Raleway', sans-serif; /* Aplica la fuente Raleway */
+    font-weight: normal; /* Peso de fuente normal */
+    font-size: 50px; /* Tamaño de fuente grande */
 }
 
+/* Estilos para el main */
 main {
-    justify-content: center;
-    background-color: black;
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color del texto blanco */
 }
 
-.mainFoto {
-    height: 727px;
-    width: 100%;
+/* Estilo para la imagen principal */
+.main-photo .main-foto {
+    height: 727px; /* Altura de la imagen */
+    width: 100%; /* Ancho completo */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin deformarse */
 }
 
-section.descripcionFoto {
-    display: flex;
-    background-color: black;
-    justify-content: space-around;
-    align-items: center;
-    height: 348px;
+/* Sección de descripción de la foto */
+.descripcion-foto {
+    display: flex; /* Utiliza flexbox para alinear elementos hijos */
+    justify-content: space-around; /* Distribuye el espacio equitativamente alrededor de los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    padding: 20px; /* Padding alrededor de la sección */
+    background-color: black; /* Color de fondo negro */
+    color: white; /* Color del texto blanco */
 }
 
+/* Estilo para los párrafos */
 p {
-    color: white;
-    width: 475px;
-    font-family: "Raleway", sans-serif;
-    font-weight: light;
-    font-size: 16px;
+    width: 475px; /* Ancho del párrafo */
+    font-family: 'Raleway', sans-serif; /* Aplica la fuente Raleway */
+    font-weight: 300; /* Peso de fuente ligero */
+    font-size: 16px; /* Tamaño de fuente mediano */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+    margin-bottom: 15px; /* Margen inferior para separar los párrafos */
 }
 
-.fotoArticulo {
-    height: 237px;
+/* Estilo para la imagen del artículo */
+.foto-articulo {
+    height: 237px; /* Altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin deformarse */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
 }
 
-#sectionCaracteristica {
-    background-color: #1E1A13;
-    color: white;
-    font-family: "Raleway", sans-serif;
-    height: 348px;
+/* Sección de características */
+#section-caracteristica {
+    background-color: #1E1A13; /* Color de fondo oscuro */
+    padding: 20px 0; /* Padding arriba y abajo */
+    text-align: center; /* Centra el texto */
 }
 
-h2.raleway{
-    font-weight:normal;
-    font-size: 40px;
-    text-align: center;
-    padding-top: 3%;
+/* Estilo para el título de las características */
+#section-caracteristica h2 {
+    font-family: 'Raleway', sans-serif; /* Aplica la fuente Raleway */
+    font-weight: normal; /* Peso de fuente normal */
+    font-size: 40px; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Margen inferior para separar el título del contenido */
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-content: space-around;
-    padding-top: 2%;
+/* Contenedor de las características */
+#section-caracteristica .container {
+    display: flex; /* Utiliza flexbox para alinear elementos hijos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    gap: 20px; /* Espacio entre los elementos */
 }
 
-.item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    width: 20%;
-    row-gap: 15px;
+/* Estilo para cada ítem de característica */
+#section-caracteristica .item {
+    display: flex; /* Utiliza flexbox para alinear elementos hijos */
+    flex-direction: column; /* Alinea los elementos hijos en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    width: 20%; /* Ancho del ítem */
+    text-align: center; /* Centra el texto */
 }
 
-.item i {
-    font-size: 50px;
-}
-.item div {
-    font-size: 24px;
-    font-weight: lighter;
+/* Estilo para los íconos */
+#section-caracteristica .item i {
+    font-size: 50px; /* Tamaño de fuente grande */
+    margin-bottom: 10px; /* Margen inferior para separar el ícono del texto */
 }
 
-.fotosFinal {
-    display: flex;
-    width: 100%;
-    height: 348px;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
+/* Estilo para los textos de las características */
+#section-caracteristica .item div {
+    font-size: 24px; /* Tamaño de fuente mediano */
+    font-weight: 300; /* Peso de fuente ligero */
 }
 
+/* Sección de fotos finales */
+.fotos-final {
+    display: flex; /* Utiliza flexbox para alinear elementos hijos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    gap: 16px; /* Espacio entre los elementos */
+    padding: 20px; /* Padding alrededor de la sección */
+    background-color: black; /* Color de fondo negro */
+}
+
+/* Estilo para las imágenes finales */
+.fotos-final div img {
+    height: 202px; /* Altura de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin deformarse */
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilo para el footer */
 footer {
-    background-color: #1E1A13;
-    color: white;
-    font-family: "Raleway", sans-serif;
-    font-size: 24px;
-    font-weight: lighter;
+    background-color: #1E1A13; /* Color de fondo oscuro */
+    color: white; /* Color del texto blanco */
+    font-family: 'Raleway', sans-serif; /* Aplica la fuente Raleway */
+    font-size: 18px; /* Tamaño de fuente mediano */
+    font-weight: 300; /* Peso de fuente ligero */
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Padding arriba y abajo */
 }
 
-footer div{
-    display: flex;
-    height: 102px;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+/* Estilo para el contenedor del footer */
+footer div {
+    display: flex; /* Utiliza flexbox para alinear elementos hijos */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    gap: 5px; /* Espacio entre los elementos */
 }
 
-footer div a{
-    text-decoration: none;
-    color: white;
+/* Estilo para los enlaces del footer */
+footer div a {
+    text-decoration: none; /* Elimina el subrayado por defecto */
+    color: white; /* Color del texto blanco */
+    font-weight: bold; /* Texto en negrita */
 }
-
